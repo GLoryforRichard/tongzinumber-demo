@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AADA547E2F32E3330068C469 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADA547D2F32E3330068C469 /* UserNotifications.framework */; };
+		AADA54802F32E3330068C469 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADA547F2F32E3330068C469 /* UserNotificationsUI.framework */; };
+		AADA548A2F32E3330068C469 /* NotificationContent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AADA547B2F32E3330068C469 /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AADA545B2F32DC4A0068C469 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = AADA544C2F32DC490068C469;
 			remoteInfo = "tongzinumber-demo";
 		};
+		AADA54882F32E3330068C469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AADA54452F32DC490068C469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AADA547A2F32E3330068C469;
+			remoteInfo = NotificationContent;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AADA548F2F32E3330068C469 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AADA548A2F32E3330068C469 /* NotificationContent.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AADA544D2F32DC490068C469 /* tongzinumber-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tongzinumber-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADA545A2F32DC4A0068C469 /* tongzinumber-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tongzinumber-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADA54642F32DC4A0068C469 /* tongzinumber-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tongzinumber-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AADA547B2F32E3330068C469 /* NotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AADA547D2F32E3330068C469 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AADA547F2F32E3330068C469 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AADA548B2F32E3330068C469 /* Exceptions for "NotificationContent" folder in "NotificationContent" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AADA547A2F32E3330068C469 /* NotificationContent */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AADA544F2F32DC490068C469 /* tongzinumber-demo */ = {
@@ -43,6 +83,14 @@
 		AADA54672F32DC4A0068C469 /* tongzinumber-demoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "tongzinumber-demoUITests";
+			sourceTree = "<group>";
+		};
+		AADA54812F32E3330068C469 /* NotificationContent */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AADA548B2F32E3330068C469 /* Exceptions for "NotificationContent" folder in "NotificationContent" target */,
+			);
+			path = NotificationContent;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AADA54782F32E3330068C469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADA54802F32E3330068C469 /* UserNotificationsUI.framework in Frameworks */,
+				AADA547E2F32E3330068C469 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				AADA544F2F32DC490068C469 /* tongzinumber-demo */,
 				AADA545D2F32DC4A0068C469 /* tongzinumber-demoTests */,
 				AADA54672F32DC4A0068C469 /* tongzinumber-demoUITests */,
+				AADA54812F32E3330068C469 /* NotificationContent */,
+				AADA547C2F32E3330068C469 /* Frameworks */,
 				AADA544E2F32DC490068C469 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				AADA544D2F32DC490068C469 /* tongzinumber-demo.app */,
 				AADA545A2F32DC4A0068C469 /* tongzinumber-demoTests.xctest */,
 				AADA54642F32DC4A0068C469 /* tongzinumber-demoUITests.xctest */,
+				AADA547B2F32E3330068C469 /* NotificationContent.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AADA547C2F32E3330068C469 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AADA547D2F32E3330068C469 /* UserNotifications.framework */,
+				AADA547F2F32E3330068C469 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				AADA54492F32DC490068C469 /* Sources */,
 				AADA544A2F32DC490068C469 /* Frameworks */,
 				AADA544B2F32DC490068C469 /* Resources */,
+				AADA548F2F32E3330068C469 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AADA54892F32E3330068C469 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AADA544F2F32DC490068C469 /* tongzinumber-demo */,
@@ -163,6 +234,28 @@
 			productReference = AADA54642F32DC4A0068C469 /* tongzinumber-demoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AADA547A2F32E3330068C469 /* NotificationContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AADA548C2F32E3330068C469 /* Build configuration list for PBXNativeTarget "NotificationContent" */;
+			buildPhases = (
+				AADA54772F32E3330068C469 /* Sources */,
+				AADA54782F32E3330068C469 /* Frameworks */,
+				AADA54792F32E3330068C469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AADA54812F32E3330068C469 /* NotificationContent */,
+			);
+			name = NotificationContent;
+			packageProductDependencies = (
+			);
+			productName = NotificationContent;
+			productReference = AADA547B2F32E3330068C469 /* NotificationContent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = AADA544C2F32DC490068C469;
 					};
+					AADA547A2F32E3330068C469 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = AADA54482F32DC490068C469 /* Build configuration list for PBXProject "tongzinumber-demo" */;
@@ -203,6 +299,7 @@
 				AADA544C2F32DC490068C469 /* tongzinumber-demo */,
 				AADA54592F32DC4A0068C469 /* tongzinumber-demoTests */,
 				AADA54632F32DC4A0068C469 /* tongzinumber-demoUITests */,
+				AADA547A2F32E3330068C469 /* NotificationContent */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AADA54622F32DC4A0068C469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AADA54792F32E3330068C469 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AADA54772F32E3330068C469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = AADA544C2F32DC490068C469 /* tongzinumber-demo */;
 			targetProxy = AADA54652F32DC4A0068C469 /* PBXContainerItemProxy */;
+		};
+		AADA54892F32E3330068C469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AADA547A2F32E3330068C469 /* NotificationContent */;
+			targetProxy = AADA54882F32E3330068C469 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,8 +509,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tongzinumber-demo/tongzinumber-demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7433A2X247;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -420,8 +538,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tongzinumber-demo/tongzinumber-demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7433A2X247;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -446,8 +566,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7433A2X247;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
@@ -464,8 +586,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7433A2X247;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
@@ -483,6 +607,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7433A2X247;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cupicelemon.tongzinumber-demoUITests";
@@ -499,6 +624,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7433A2X247;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cupicelemon.tongzinumber-demoUITests";
@@ -507,6 +633,58 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "tongzinumber-demo";
+			};
+			name = Release;
+		};
+		AADA548D2F32E3330068C469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationContent/NotificationContent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7433A2X247;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationContent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationContent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cupicelemon.tongzinumber-demo.NotificationContent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AADA548E2F32E3330068C469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationContent/NotificationContent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7433A2X247;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationContent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationContent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cupicelemon.tongzinumber-demo.NotificationContent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -545,6 +723,15 @@
 			buildConfigurations = (
 				AADA54752F32DC4A0068C469 /* Debug */,
 				AADA54762F32DC4A0068C469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AADA548C2F32E3330068C469 /* Build configuration list for PBXNativeTarget "NotificationContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AADA548D2F32E3330068C469 /* Debug */,
+				AADA548E2F32E3330068C469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
